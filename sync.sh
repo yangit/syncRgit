@@ -1,0 +1,2 @@
+rclone --gcs-bucket-policy-only copy g:/rgit/ ~/rgit/ --filter-from ~/rgit/rclone.ignore --progress --order-by modtime,desc --check-first --update --transfers 20
+rclone --gcs-bucket-policy-only copy ~/rgit/ g:/rgit/ --filter-from ~/rgit/rclone.ignore --progress --order-by modtime,desc --check-first --update --transfers 20
