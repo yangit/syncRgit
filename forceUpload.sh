@@ -1,0 +1,1 @@
+rclone --gcs-bucket-policy-only sync ~/rgit/ g:/rgit/ --filter-from ~/rgit/rclone.ignore --progress --order-by modtime,desc --check-first --transfers 20
